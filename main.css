@@ -1,0 +1,205 @@
+/* OUTLINE
+
+1. RESET
+2. UNIVERSAL ATTRIBUTES
+	2.A. ELEMENTS
+	2.B. CLASSES
+	2.C. HEADER AND FOOTER
+3. HOME PAGE
+4. SERVICES PAGE
+5. BIO PAGE
+6. GEAR PAGE 
+7. CONTACT PAGE
+
+*/
+
+@charset "UTF-8";
+
+/* 1. RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 1em;
+	font: inherit;
+	vertical-align: baseline;
+	}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+body {
+	line-height: 1;
+	}
+ol, ul {
+	list-style: none;
+	}
+blockquote, q {
+	quotes: none;
+	}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+	}
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	}
+
+/* GET hack code */
+
+/* 2. UNIVERSAL ATTRIBUTES */
+
+/* 2.A. ELEMENTS */
+
+body {	font-family: garamond, cardo, serif;
+	background-image: url(../images/RCA44LogoCrop2.jpg);
+	background-size:100%;
+	}
+a	{color:#000000;}
+p	{margin: 1em;
+	}
+figure {
+	margin: 1em;
+	border: solid thin;
+	float: right;
+	}
+figcaption {text-align: center; margin: .5em}
+
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+h1	{
+	font-size: 2.5em; 
+	text-transform: lowercase;
+	text-align: center;
+	border-bottom: solid thin;
+	padding: .5em 0em .2em 0em;	
+	}
+h2	{
+	font-size: 2em; 
+	text-transform: lowercase; 
+	margin: .5em;
+	}
+h3	{
+	font-size: 1em; 
+	text-transform: uppercase; 
+	
+	}
+
+/* 2.B. CLASSES */
+
+.maindivtheme {
+	background-color: #F7F7F7;
+	opacity:0.97;
+	min-width:800px;
+	padding: .5em 2em 1em 2em; 
+	margin: 2em;
+	}
+.bottomborder {border-bottom: solid thin;}
+.marg1emtb {margin: 1em 0 1em 0}
+.clear {clear: both}
+.clearleft {clear: left}
+
+/* 2.c. HEADER AND FOOTER */
+
+#header {
+	padding: 1em;	
+	}
+#header h1 {
+	font-size: 4.75em; 
+	text-transform: none;
+	border-bottom: none;
+	padding: 0em;
+	margin: .2em 0em .2em 0em;
+	}
+#header h2 {
+	text-transform: lowercase; 
+	text-align: center;
+	font-size: 2em; 
+	margin: .5em 0em .7em 0em;
+	}
+nav {
+	border-top: solid thin;
+	border-bottom: solid thin;
+	}
+ul {
+	list-style-type:none;
+	text-transform: uppercase;
+	font-size: .9em;
+	margin: .7em 0em .7em 0em;
+	}
+li {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	width: 15%;
+	}
+li a {
+	text-decoration: none
+	}	
+
+
+#footer {clear: both; text-align: center;}
+#footer h6 {font-size: .75em; margin: .75em 0em 0em 0em;}
+
+/* 3. HOME PAGE */
+
+.bigger {font-size: 1.5em;}
+.artist  {float: left; width: 50%;}	
+.location {float: right; width: 50%; text-align: right;}	
+.songaudio {float:left; width: 40%;}
+.songtext {float: right; width:60%; text-align:right;}
+
+/* 4. PHILOSOPHY PAGE */
+
+#servicesnavbar {border-top: none;}
+#servicesnavbar li {width: 24%;}
+
+
+#masteringwrap {display: inline-block; width:100%; margin: 0 0 0 6%;}
+.masteringcolumn { 
+	margin: 0 auto; 
+	width:47%; 
+	float:left; 
+	}
+#sampleaudiowrapperwrap {display: inline-block; width:100%; margin: 0 0 1em 2em;}
+.sampleaudiowrapper {float:left; padding-left: 2em;} 
+.sampleaudio {margin-top: 1em;}
+
+/* 5. GEAR PAGE */
+
+#gearlist {width: 80%; margin: 1em auto 1em auto;}
+#gearlist div {border-top: solid thin; clear: both; padding: .5em;}
+#gearlist img {float: right; margin-left: 1em;}
+
+
+#thefineprint {font-size: 75%; text-transform: uppercase;}
+#googledocdiv
+#googledocspreadsheet {
+	background-color: #FFFFFF;
+	opacity:0.95;
+	display: block;
+	margin: 1em auto 1em auto;
+	}
+ 
+/* 6. CONTACT PAGE */
+
+
+
+
+
+	
