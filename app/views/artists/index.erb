@@ -1,0 +1,11 @@
+
+
+<div class="maindivtheme"><h1>About</h1><p><span class="bigger">I've developed a niche for recording all styles of music in acoustically interesting locations. </span>I also do mixing, mastering, noise removal, live sound, and audio for video. I approach every project individually, choosing a setting and a workflow that's best for each situation, wherever and whatever that may be.</p><h1>Audio</h1>
+	<div class="bottomborder">
+    <% @artists.each do |artist| %>
+		  <%= erb :"artists/_show_artist", locals: { artist: artist } %>
+    <% end %>
+	</div>
+</div>
+
+

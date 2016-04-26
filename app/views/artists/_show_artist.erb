@@ -1,0 +1,14 @@
+
+<div class="bottomborder">
+  <div class="marg1emtb">
+    <div class="artist"><h3>Artist: <%= artist.name %></h3>
+    </div>
+    <div class="location"><h3>Location: <%= artist.location  %></h3>
+    </div>
+    <div class="clear">
+    </div>
+  </div>
+  <% artist.recordings.each do |recording| %>
+    <%= erb :"recordings/_show_recording", locals: { recording: recording } %>
+  <% end %>
+</div>
